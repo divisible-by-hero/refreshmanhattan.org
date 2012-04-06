@@ -1,0 +1,36 @@
+@import compass/css3
+
+$deep-purple: #480d71
+
+body
+    background: $deep-purple
+    font: medium/1.4 Arial, sans-serif
+
+::-moz-selection
+    background: #fff
+    color: #fff
+    text-shadow: none
+::selection
+    background: #fff
+    color: #fff
+    text-shadow: none
+
+h1,
+h2,
+h3
+    color: #fff
+    margin: 0 auto
+    text-align: center
+
+h1
+    +text-shadow(0px 1px 0 $deep-purple, 0px 3px 0 #000)
+    font-family: Georgia, serif
+    font-size: 3em
+    line-height: 1
+    margin: 2.5em auto .05em
+
+h2
+    font-weight: normal
+
+h3
+    color: $deep-purple

@@ -1,0 +1,40 @@
+body {
+  background: #480d71;
+  font: medium/1.4 Arial, sans-serif;
+}
+
+::-moz-selection {
+  background: white;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background: white;
+  color: white;
+  text-shadow: none;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0px 1px 0 #480d71, 0px 3px 0 black;
+  font-family: Georgia, serif;
+  font-size: 3em;
+  line-height: 1;
+  margin: 2.5em auto 0.05em;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  color: #480d71;
+}
