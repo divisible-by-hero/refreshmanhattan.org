@@ -16,10 +16,14 @@ class BlogServerTests(LiveServerTestCase):
     @classmethod
     def setUpClass(cls):
         cls.selenium = WebDriver()
-        super(BlogerverTests, cls).setUpClass()
+        super(BlogServerTests, cls).setUpClass()
         
     @classmethod
     def tearDownClass(cls):
         super(BlogServerTests, cls).tearDownClass()
-        cls.selenium.quit()
+        #cls.selenium.quit()
+        
+    def test_view_post(self):
+        print(self.post.get_absolute_url())
+        self.selenium.get("%s%s" % (self.live_server_url, self.post.get_absolute_url()))
         

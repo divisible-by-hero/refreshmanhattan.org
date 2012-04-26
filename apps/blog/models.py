@@ -11,9 +11,9 @@ class Category(models.Model):
     def __unicode__(self):
         return self.name
 
-    def save(self):
+    def save(self, *args, **kwargs):
         unique_slugify(self, self.name)
-        super(Category, self).save()
+        super(Category, self).save(*args, **kwargs)
 
 class Post(models.Model):
     title = models.CharField(max_length=250, null=True)
@@ -35,6 +35,10 @@ class Post(models.Model):
     def __unicode__(self):
         return self.title
     
-    def save(self):
+    @models.permalink
+    def get_absolute_url(self):
+        return ('post_detail', (), { 'slug': self.slug })
+    
+    def save(self, *args, **kwargs):
         unique_slugify(self, self.title)
-        super(Post, self).save()
+        super(Post, self).save(*args, **kwargs)

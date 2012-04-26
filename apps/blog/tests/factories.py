@@ -11,4 +11,5 @@ class PostFactory(factory.Factory):
 class CategoryFactory(factory.Factory):
     FACTORY_FOR = Category
     
+    name = "Test Category"
     
