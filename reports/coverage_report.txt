@@ -8,7 +8,8 @@ apps/blog/migrations/0003_auto__chg_field_post_extra_head__chg_field_post_extra_
 apps/blog/migrations/__init__                                                              0      0   100%   
 apps/blog/models                                                                          31      6    81%   12, 15-16, 36, 39-40
 apps/blog/tests/__init__                                                                   2      0   100%   
-apps/blog/tests/live                                                                       0      0   100%   
+apps/blog/tests/factories                                                                  9      0   100%   
+apps/blog/tests/live                                                                      17      8    53%   10-13, 18-19, 23-24
 apps/blog/tests/models                                                                     0      0   100%   
 conf/__init__                                                                              0      0   100%   
 conf/environment                                                                          15      0   100%   
@@ -17,4 +18,4 @@ settings/__init__                                                               
 settings/common                                                                           18      0   100%   
 settings/local                                                                            13      0   100%   
 --------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                    128     12    91%   
+TOTAL                                                                                    154     20    87%   
