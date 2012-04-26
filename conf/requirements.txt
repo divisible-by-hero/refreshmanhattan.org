@@ -4,3 +4,4 @@ hadrian
 factory_boy
 selenium
 django-taggit
+coverage
