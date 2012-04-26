@@ -21,9 +21,8 @@ class BlogServerTests(LiveServerTestCase):
     @classmethod
     def tearDownClass(cls):
         super(BlogServerTests, cls).tearDownClass()
-        #cls.selenium.quit()
+        cls.selenium.quit()
         
     def test_view_post(self):
-        print(self.post.get_absolute_url())
         self.selenium.get("%s%s" % (self.live_server_url, self.post.get_absolute_url()))
-        
+        self.selenium.get_screenshot_as_file('test_screenshots/index.png')
