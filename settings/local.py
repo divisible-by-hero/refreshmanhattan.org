@@ -59,8 +59,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     
+    'taggit',
+    'south',
+    
+    'blog',
     #Site specific apps
     #'apps.myapps',
-)
-
 )
