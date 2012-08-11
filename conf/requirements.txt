@@ -1,3 +1,7 @@
 django==1.4
-south
+south==0.7.4
 hadrian
+factory_boy
+selenium
+django-taggit
+coverage
