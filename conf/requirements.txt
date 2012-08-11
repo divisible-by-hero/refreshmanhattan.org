@@ -6,3 +6,4 @@ Werkzeug
 django-extensions
 django-taggit
 coverage
+django-bootstrap-static==2.0.2

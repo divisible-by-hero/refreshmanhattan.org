@@ -57,8 +57,9 @@ INSTALLED_APPS = (
     'south',
     
     'blog',
-    'calendar',
+    'events',
     'meetups',
+    'bootstrap',
     'django_extensions',
     #Site specific apps
     #'apps.myapps',

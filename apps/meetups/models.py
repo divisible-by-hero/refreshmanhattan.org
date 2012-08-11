@@ -1,5 +1,5 @@
 from django.db import models
-from calendar.models import Event
+from events.models import Event
 
 __authors__ = "Derek Stegelman"
 __date__ = "August 2012"

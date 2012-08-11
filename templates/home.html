@@ -1,5 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
+
+<div class="page-header">
 <h1>Refresh Manhattan</h1>
+    </div>
+
+<div class="span8">
+    <h2>What is Refresh?</h2>
+    <blockquote>
+    <p>
+        Refresh is a community of designers and developers working to refresh
+        the creative, technical, and professional culture of New Media
+        endeavors in Manhattan Kansas. Promoting design, technology, usability, and
+        standards.
+    </p>
+    </blockquote>
+
+    <h3>Refresh Manifesto</h3>
+    <ul>
+        <li>let's gather great minds</li>
+        <li>
+            let's share all of our knowledge
+        </li>
+        <li>let's all grow and learn</li>
+        <li>let's promote local talent</li>
+        <li>let's promote local talent</li>
+        <li>let's be more than we think we can be</li>
+        <li>let's make our cities better</li>
+    </ul>
+
+</div>
+<div class="span4 right">
+    <h2>Get Involved</h2>
+    <a href="#" class="btn">Join Refresh</a>
+    <h2>Upcoming Events</h2>
+    {% for event in events %}
+        <div class="well">
+            <h3>{{ event.title }}</h3>
+        </div>
+    {% endfor %}
+</div>
+
 
 {% endblock content %}
