@@ -29,9 +29,11 @@
     {% endblock %}
 </head>
 <body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
+    {% block content %}
+    {% endblock content %}
     {% block extra_foot %}
     {% endblock extra_foot %}
     {% block extra_foot_js %}
-    {% endblock extra_foot %}
+    {% endblock extra_foot_js %}
 </body>
 </html>

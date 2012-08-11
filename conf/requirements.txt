@@ -1,7 +1,8 @@
-django==1.4
-south==0.7.4
+django==1.4.1
+south==0.7.6
 hadrian==1.1.4
 factory_boy
-
+Werkzeug
+django-extensions
 django-taggit
 coverage

@@ -38,16 +38,10 @@ STATIC_ROOT = '' #os.path.join(SITE_ROOT, 'static')
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = '/static/'
 
-
-
 TEMPLATE_DIRS = (
     #"/Users/Derek/Documents/code/personal/apps/fotochest/static/photo_manager/themes/default/templates"
     os.path.join(SITE_ROOT, 'templates'),
 )
-
-
-
-
 
 
 INSTALLED_APPS = (
@@ -63,6 +57,9 @@ INSTALLED_APPS = (
     'south',
     
     'blog',
+    'calendar',
+    'meetups',
+    'django_extensions',
     #Site specific apps
     #'apps.myapps',
 )

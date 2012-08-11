@@ -1,5 +1,6 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls import patterns, include, url
 from django.conf import settings
+from django.views.generic import TemplateView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from django.contrib import admin
@@ -7,15 +8,17 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^', include('blog.urls')),
+    url(r'^$', TemplateView.as_view(template_name="home.html")),
 
     url(r'^admin/', include(admin.site.urls)),
 )
 
-urlpatterns += patterns('',
-    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-)
+if settings.DEBUG:
+
+    urlpatterns += patterns('',
+        (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    )
 
 
 
-urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += staticfiles_urlpatterns()
