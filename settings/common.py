@@ -81,7 +81,7 @@ MIDDLEWARE_CLASSES = (
 WSGI_APPLICATION = 'wsgi.application'
 #AUTH_PROFILE_MODULE = 'profile.UserProfile'
 
-
+ROOT_URLCONF = 'urls'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

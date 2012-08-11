@@ -48,7 +48,7 @@ TEMPLATE_DIRS = (
 
 
 
-ROOT_URLCONF = 'urls.local'
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
