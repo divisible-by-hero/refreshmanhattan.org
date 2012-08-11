@@ -1,4 +1,4 @@
 #Project details
-PROJECT_ID = 'example.com'
-PROJECT_USER = 'user'
-PROJECT_HOSTS = ['example.com']
+PROJECT_ID = 'refreshmanhattan.org'
+PROJECT_USER = 'faustman'
+PROJECT_HOSTS = ['web52.webfaction.com']
