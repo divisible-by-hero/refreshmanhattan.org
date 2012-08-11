@@ -83,6 +83,27 @@ WSGI_APPLICATION = 'wsgi.application'
 
 ROOT_URLCONF = 'urls'
 
+INSTALLED_APPS = (
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.admin',
+
+    'taggit',
+    'south',
+
+    'blog',
+    'events',
+    'meetups',
+    'bootstrap',
+    'django_extensions',
+    #Site specific apps
+    #'apps.myapps',
+    )
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
